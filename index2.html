@@ -6,11 +6,12 @@
 
 <body>
     <script>
+                    let sair = false;
+
         do {
             let x = Number(prompt("Digite o valor de x"));
             let y = Number(prompt("Digite o valor de y"));
             let opc = Number(prompt("1 - Soma \n2 - Subtração \n3 - Multiplicação \n4 - Divisão\n5 - sair"));
-            let sair = false;
             switch (opc) {
                 case 1:
                     alert(`O resultado da soma foi: ${x + y}`);
@@ -27,7 +28,9 @@
                     } else { alert(`O resultado da divisão foi: ${x / y}`); }
                     break;
                 case 5:
+                    alert("Finalizando....");
                     sair = true;
+                    break;
                 default:
                     alert("Operação inválida");
                     break;
